@@ -3,29 +3,29 @@ function ignoreFalsyValue(arr) {
   for (let i = 0; i < arr.length; i++) {
 
 
-    if (
-      arr[i] == "" ||
-      arr[i] == false ||
-      arr[i] == null ||
-      arr[i] == 0 ||
-      arr[i] == undefined
-    ) {
-        // Do Nothing (Pass to next itarate)
-    } else {
-      positive.push(arr[i]);
-    }
+    // if (
+    //   arr[i] == "" ||
+    //   arr[i] == false ||
+    //   arr[i] == null ||
+    //   arr[i] == 0 ||
+    //   arr[i] == undefined
+    // ) {
+    //     // Do Nothing (Pass to next itarate)
+    // } else {
+    //   positive.push(arr[i]);
+    // }
 
     // using not equal condition
 
-    // if (
-    //     arr[i] != "" ||
-    //     arr[i] != false ||
-    //     arr[i] != null ||
-    //     arr[i] != 0 ||
-    //     arr[i] != undefined
-    //   ) {
-    //     positive.push(arr[i]);
-    //   }
+    if (
+        arr[i] != "" &&
+        arr[i] != false &&
+        arr[i] != null &&
+        arr[i] != 0 &&
+        arr[i] != undefined
+      ) {
+        positive.push(arr[i]);
+      }
 
   }
   return positive;
